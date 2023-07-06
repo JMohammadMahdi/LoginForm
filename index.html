@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>authntication</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./response.css">
+</head>
+
+<body>
+  <main>
+    <span class="goto-signup">Not a member? <a href="#">Register now</a></span>
+    <div class="poster"><img src="./Design/BackgroundNewSize.png" alt="background"></div>
+    <form class="Form">
+      <h2 class="welcome-text">Hello Again!</h2>
+      <h5>welcome back you've been messed!</h3>
+        <div class="input-box">
+          <div class="username-box">
+            <input id="username" class="username-input" type="text" placeholder="Enter username">
+            <span class="UserError-display"></span>
+          </div>
+          <div class="password-box">
+            <input id="password" class="password-input" type="password" placeholder="Password">
+            <i id="PasswordVisibility" class="fa-regular fa-eye"></i>
+            <span class="PassError-display"></span>
+          </div>
+        </div>
+        <a class="forgot-password" href="#">
+          <span>Recovery Password</span>
+        </a>
+        <button class="signin-btn">Sign In</button>
+        <span class="auth-with">Or continue with</span>
+        <ul class="Authentication-methods">
+          <a href="#">
+            <li class="auth">
+              <img src="./Icons/icons8-google-logo.svg" alt="google">
+            </li>
+          </a>
+          <a href="#">
+            <li class="auth apple">
+              <img src="./Icons/icons8-apple.svg" alt="apple">
+            </li>
+          </a>
+          <a href="#">
+            <li class="auth">
+              <img src="./Icons/icons8-facebook.svg" alt="facebook">
+            </li>
+          </a>
+        </ul>
+    </form>
+  </main>
+  <script src="https://kit.fontawesome.com/0abbda0bca.js" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

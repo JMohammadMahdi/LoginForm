@@ -1,0 +1,53 @@
+@media (max-width: 900px) {
+    main {
+        width: 100%;
+        min-height: 100vh;
+        max-height: max-content;
+        border-radius: 0;
+        box-sizing: border-box;
+        padding: 10px;
+        animation: none;
+    }
+    .poster {
+        display: none;
+    }
+    .Form {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 400px) {
+    .Form h2 {
+        font-size: 1.7rem;
+    }
+    .Form h5 {
+        font-size: .7rem;
+    }
+    .signin-btn {
+        font-size: 1.2rem;
+    }
+    .auth-with {
+        font-size: .7rem;
+    }
+    .goto-signup {
+        font-size: .8rem;
+    }
+    .forgot-password {
+        font-size: .9rem;
+    }
+    .auth {
+        width: 65px;
+        height: 45px;
+    }
+    .auth img {
+        width: 35px;
+    }
+    .goto-signup {
+        right: 15px;
+    }
+}
+@media (max-width: 300px) {
+    .Form {
+        padding: 0;
+    }
+}

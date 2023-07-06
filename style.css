@@ -1,0 +1,198 @@
+:root {
+    --antiflash-white: #F3F3F7ff;
+    --bittersweet: #FE6B68ff;
+    --dark-purple: #2A2639ff;
+    --dark-purple-light: rgb(150, 150, 161);
+    --azure: #207AF2ff;
+    --Crimson: #D7263D;
+}
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    width: 90vw;
+    max-width: 1000px;
+    height: 800px;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    color: var(--dark-purple);
+    border: 1px solid #fff;
+    padding: 10px 0 10px 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* animation: FormVisibility 1s; */
+}
+.poster {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.poster img {
+    height: 100%;
+}
+.Form {
+    width: 50%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+.Form h2 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+}
+.Form h5 {
+    margin: 10px 0;
+    font-size: .8rem;
+    font-weight: 500;
+    text-align: center;
+}
+.input-box {
+    margin: 20px 0 0;
+}
+.password-box {
+    position: relative;
+}
+.password-box .fa-eye, .password-box .fa-eye-slash {
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.username-input, .password-input {
+    height: 60px;
+    width: 100%;
+    margin: 10px 0 5px;
+    background: #fff;
+    color: var(--dark-purple-light);
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.UserError-display, .PassError-display {
+    color: var(--Crimson);
+    font-size: .85rem;
+}
+.username-input::placeholder, .password-input::placeholder {
+    color: var(--dark-purple-light);
+}
+.ErrorUsername-input::placeholder, .ErrorPassword-input::placeholder {
+    color: var(--Crimson);
+}
+.ErrorUsername-input, .ErrorPassword-input {
+    color: var(--Crimson);
+}
+.forgot-password {
+    text-align: right;
+    display: block;
+    color: var(--dark-purple);
+    padding: 5px 5px 5px 0;
+}
+.signin-btn {
+    width: 100%;
+    height: 70px;
+    background-color: var(--bittersweet);
+    color: var(--antiflash-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 15px 70px rgba(254, 107, 104, .6);
+}
+.auth-with {
+    color: var(--dark-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-with::before, .auth-with::after {
+    content: "";
+    display: inline-block;
+    width: 15%;
+    height: 2px;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+.auth-with::before {
+    background: rgb(255,255,255);
+    background: linear-gradient(-90deg, rgba(255,255,255,1) 50%, rgba(213,212,212,0) 100%);
+}
+.auth-with::after {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(213,212,212,0) 78%);
+}
+.goto-signup {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+.goto-signup a {
+    color: var(--azure);
+    font-weight: 600;
+    cursor: pointer;
+}
+.Authentication-methods {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0;
+}
+.auth{
+    width: 80px;
+    height: 60px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+.apple {
+    background: #fff;
+}
+
+@keyframes FormVisibility {
+    0% {
+        transform: scale(0.8);
+    } 
+    75% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
