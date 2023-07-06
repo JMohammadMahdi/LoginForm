@@ -17,6 +17,9 @@
     }
 }
 @media (max-width: 400px) {
+    .Form {
+        padding: 0;
+    }
     .Form h2 {
         font-size: 1.7rem;
     }
@@ -47,7 +50,7 @@
     }
 }
 @media (max-width: 300px) {
-    .Form {
-        padding: 0;
+    .auth {
+        margin: 0 5px;
     }
 }
